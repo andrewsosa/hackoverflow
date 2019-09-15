@@ -1,0 +1,4 @@
+.rogue
+node_modules
+.cache/
+dist/

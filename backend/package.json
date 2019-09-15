@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "main": "server.js",
+  "description": "Mentoring backend for Hackathons!",
+  "author": "Andrew Sosa <andrew@andrewsosa.com>",
+  "license": "GPL-3.0",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "apollo-server": "^2.4.0",
+    "dotenv": "^6.0.0",
+    "graphql": "^14.1.1",
+    "graphql-import": "^0.7.1",
+    "graphql-iso-date": "^3.6.1",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.2.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.0.0",
+    "mongodb-memory-server": "^3.0.0",
+    "prettier": "^1.16.4"
+  }
+}

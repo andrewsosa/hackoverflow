@@ -1,0 +1,15 @@
+article {
+  padding: 0.5em;
+}
+
+#EventList {
+  margin: 2em 0;
+
+  .media {
+    font-weight: 600;
+
+    p.image img {
+      border-radius: 50%;
+    }
+  }
+}

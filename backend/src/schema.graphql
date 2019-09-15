@@ -1,0 +1,46 @@
+scalar Date
+
+type User {
+  _id: String
+  name: String
+  karma: Int
+}
+
+type Event {
+  _id: String
+  name: String!
+}
+
+type Topic {
+  _id: String
+  name: String
+}
+
+type Ticket {
+  _id: String
+  name: String
+  author: User
+  created: Date
+  location: String
+  status: String
+  topics: [String]
+}
+
+type Query {
+  tickets(status: String = "Open", topics: String): [Ticket]
+  ticket(_id: String): Ticket
+  topics: [Topic]
+  events: [Event]
+  # topic(name: String): [Ticket]
+}
+
+type Mutation {
+  createTicket(
+    authorId: String
+    eventId: String!
+    location: String!
+    topics: [String!]!
+    name: String
+  ): Ticket
+  createEvent(name: String!): Event
+}
